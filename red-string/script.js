@@ -12,7 +12,7 @@ const CONFIG = {
   USERNAME: "STARLIGHT",      // case-insensitive
   PASSWORD: "ILOVEYOU",       // case-sensitive, exact match
   SITE_TITLE: "For You",
-  SONG_PATH: "audio/our-song.mp3",
+  SONG_PATH: "/red-string/audio/our-song.mp3",
   VOLUME: 0.2,                // 0.0 - 1.0, kept low by default
   WRONG_LOGIN_MESSAGES: [
     "Hmm… I don't think the stars recognize you yet ✨",
@@ -32,7 +32,7 @@ const CONFIG = {
 --------------------------------------------------------------------- */
 const memories = [
   {
-    image: "images/IMG_1508.png",
+    image: "/images/IMG_1508.png",
     text: "You somehow make ordinary moments feel like memories worth keeping.",
     date: "",
     note: "",
@@ -40,7 +40,7 @@ const memories = [
     flower: "🌸",
   },
   {
-    image: "images/IMG_9887.png",
+    image: "/images/IMG_9887.png",
     text: "This picture makes me smile every single time.",
     date: "",
     note: "favorite ♥",
@@ -48,7 +48,7 @@ const memories = [
     flower: "",
   },
   {
-    image: "images/IMG_8780.png",
+    image: "/images/IMG_8780.png",
     text: "I don't know if you realize it, but your smile has rescued more of my days than you'll probably ever know.",
     date: "",
     note: "",
@@ -56,7 +56,7 @@ const memories = [
     flower: "🌼",
   },
   {
-    image: "images/instc 2026-06-05 2143016136D159487F.png",
+    image: "/images/instc 2026-06-05 2143016136D159487F.png",
     text: "I think my camera likes you almost as much as I do.",
     date: "",
     note: "this one :)",
@@ -64,7 +64,7 @@ const memories = [
     flower: "",
   },
   {
-    image: "images/IMG_1244.png",
+    image: "/images/IMG_1244.png",
     text: "Somewhere between all the jokes, conversations, and random little moments… you definetly are my favorite person.",
     date: "",
     note: "",
@@ -72,7 +72,7 @@ const memories = [
     flower: "🌿",
   },
   {
-    image: "images/IMG_0096.png",
+    image: "/images/IMG_0096.png",
     text: "10/10 memory. Would absolutely experience again.",
     date: "",
     note: "",
@@ -80,7 +80,7 @@ const memories = [
     flower: "",
   },
   {
-    image: "images/IMG_0357.png",
+    image: "/images/IMG_0357.png",
     text: "There's something about being around you that makes life feel a little less complicated.",
     date: "",
     note: "still makes me smile",
@@ -88,7 +88,7 @@ const memories = [
     flower: "🌷",
   },
   {
-    image: "images/672d2fc6-73b8-43ce-8000-d1e1162ccc39.png",
+    image: "/images/672d2fc6-73b8-43ce-8000-d1e1162ccc39.png",
     text: "With you around, this special day felt even more special.",
     date: "",
     note: "",
