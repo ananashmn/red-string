@@ -32,7 +32,7 @@ const CONFIG = {
 --------------------------------------------------------------------- */
 const memories = [
   {
-    image: "images/IMG_1508.webp",
+    image: "images/IMG_1508.jpg",
     text: "You somehow make ordinary moments feel like memories worth keeping.",
     date: "",
     note: "",
@@ -40,7 +40,7 @@ const memories = [
     flower: "🌸",
   },
   {
-    image: "images/IMG_9887.webp",
+    image: "images/IMG_9887.jpg",
     text: "This picture makes me smile every single time.",
     date: "",
     note: "favorite ♥",
@@ -48,7 +48,7 @@ const memories = [
     flower: "",
   },
   {
-    image: "images/IMG_8780.webp",
+    image: "images/IMG_8780.jpg",
     text: "I don't know if you realize it, but your smile has rescued more of my days than you'll probably ever know.",
     date: "",
     note: "",
@@ -56,7 +56,7 @@ const memories = [
     flower: "🌼",
   },
   {
-    image: "images/instc 2026-06-05 2143016136D159487F.webp",
+    image: "images/instc 2026-06-05 2143016136D159487F.jpg",
     text: "I think my camera likes you almost as much as I do.",
     date: "",
     note: "this one :)",
@@ -64,7 +64,7 @@ const memories = [
     flower: "",
   },
   {
-    image: "images/IMG_1244.webp",
+    image: "images/IMG_1244.jpg",
     text: "Somewhere between all the jokes, conversations, and random little moments… you definetly are my favorite person.",
     date: "",
     note: "",
@@ -72,7 +72,7 @@ const memories = [
     flower: "🌿",
   },
   {
-    image: "images/IMG_0096.webp",
+    image: "images/IMG_0096.jpg",
     text: "10/10 memory. Would absolutely experience again.",
     date: "",
     note: "",
@@ -80,7 +80,7 @@ const memories = [
     flower: "",
   },
   {
-    image: "images/IMG_0357.webp",
+    image: "images/IMG_0357.jpg",
     text: "There's something about being around you that makes life feel a little less complicated.",
     date: "",
     note: "still makes me smile",
@@ -88,7 +88,7 @@ const memories = [
     flower: "🌷",
   },
   {
-    image: "images/672d2fc6-73b8-43ce-8000-d1e1162ccc39.webp",
+    image: "images/672d2fc6-73b8-43ce-8000-d1e1162ccc39.jpg",
     text: "With you around, this special day felt even more special.",
     date: "",
     note: "",
