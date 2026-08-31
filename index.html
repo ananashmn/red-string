@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You — A Little Corner of the Internet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============================================================
+     GRAIN / TEXTURE OVERLAY (purely decorative, sits over everything)
+============================================================ -->
+<div class="grain-overlay" aria-hidden="true"></div>
+
+<!-- ============================================================
+     1. LOGIN SCREEN
+============================================================ -->
+<section id="login-screen" class="login-screen">
+  <div class="floating-dust" aria-hidden="true"></div>
+
+  <div class="login-card">
+    <p class="login-eyebrow">For someone very special ✨</p>
+    <h1 class="login-title">A little corner of the internet<br>made for you.</h1>
+
+    <form id="login-form" class="login-form" autocomplete="off">
+      <label class="field">
+        <span>Username</span>
+        <input type="text" id="username" name="username" placeholder="..." />
+      </label>
+      <label class="field">
+        <span>Password</span>
+        <input type="password" id="password" name="password" placeholder="..." />
+      </label>
+
+      <button type="submit" class="thread-button">Follow the red string ♥</button>
+      <p id="login-message" class="login-message" aria-live="polite"></p>
+    </form>
+  </div>
+
+  <!-- transition layer: thread that draws itself across the screen on success -->
+  <svg id="login-thread" class="login-thread" viewBox="0 0 1000 600" preserveAspectRatio="none" aria-hidden="true">
+    <path id="login-thread-path" d="M -50,550 C 200,500 300,150 500,300 C 700,450 800,100 1050,80" />
+  </svg>
+</section>
+
+<!-- ============================================================
+     MAIN SITE (hidden until login succeeds)
+============================================================ -->
+<div id="main-site" class="main-site" hidden>
+
+  <!-- floating music control -->
+  <button id="music-toggle" class="music-toggle" aria-label="Play our soundtrack">
+    <span class="music-icon">♫</span>
+    <span class="music-label">our soundtrack</span>
+  </button>
+  <audio id="bg-audio" loop preload="none">
+    <source src="audio/Stephen Sanchez - Until I Found You (Official Video).mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- corner botanicals -->
+  <div class="corner-flowers corner-tl" aria-hidden="true">🌿</div>
+  <div class="corner-flowers corner-tr" aria-hidden="true">🌸</div>
+
+  <!-- ============================================================
+       2. HERO / OPENING
+  ============================================================ -->
+  <section class="hero">
+    <div class="hero-dust" aria-hidden="true"></div>
+    <p class="hero-line hero-line-1 reveal">Some people enter your life quietly…</p>
+    <p class="hero-line hero-line-2 reveal">and somehow make everything a little brighter.</p>
+    <p class="hero-script reveal">I think you did that to mine.</p>
+    <p class="hero-secret" data-secret="psst… you look really pretty today.">🌷</p>
+    <a href="#timeline-start" class="scroll-cue reveal">Follow the string ↓</a>
+  </section>
+
+  <!-- ============================================================
+       3 & 4 & 5. RED STRING PHOTO TIMELINE
+  ============================================================ -->
+  <section id="timeline-start" class="timeline-section">
+    <svg class="thread-svg" id="thread-svg" preserveAspectRatio="none" aria-hidden="true">
+      <path id="thread-path" class="thread-path"></path>
+      <path id="thread-path-progress" class="thread-path-progress"></path>
+    </svg>
+
+    <div id="timeline-track" class="timeline-track">
+      <!-- memory items injected here by script.js -->
+    </div>
+  </section>
+
+  <!-- ============================================================
+       12. ENDING SECTION
+  ============================================================ -->
+  <section class="ending-section">
+    <svg class="ending-heart-svg" viewBox="0 0 200 180" aria-hidden="true">
+      <path id="ending-heart-path" d="M100,170 C40,120 0,80 0,45 C0,15 25,-5 55,5 C75,12 90,30 100,50 C110,30 125,12 145,5 C175,-5 200,15 200,45 C200,80 160,120 100,170 Z" />
+    </svg>
+
+    <div class="ending-flowers ending-flowers-left" aria-hidden="true">🌾</div>
+    <div class="ending-flowers ending-flowers-right" aria-hidden="true">🌼</div>
+
+    <p class="ending-line reveal">If the red string theory is real…</p>
+    <p class="ending-line ending-line-strong reveal">I'm really glad mine found you.</p>
+
+
+    <button id="ending-heart" class="ending-heart-btn reveal" aria-label="A little heart, just for you">♥</button>
+    <div class="heart-hint" id="heart-hint">
+    maybe click the heart…
+    </div>
+    <p id="easter-egg-text" class="easter-egg-text"></p>
+
+    <p class="ending-signature reveal">Made with an unreasonable amount of affection.</p>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
